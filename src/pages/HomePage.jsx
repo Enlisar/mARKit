@@ -1,12 +1,17 @@
+import founderA from "../assets/a.jpeg";
+import founderK from "../assets/k.jpg";
+
 export default function HomePage() {
   return (
     <>
       <nav className="sticky top-0 z-50 bg-white border-b border-neutral-border px-4 py-3 flex items-center justify-between">
-        <div className="text-2xl font-bold tracking-tighter">
-          <span className="text-slate-900">m</span>
-          <span className="text-primary">ARK</span>
-          <span className="text-slate-900">it</span>
-        </div>
+        <a href="/">
+          <div className="text-2xl font-bold tracking-tighter">
+            <span className="text-slate-900">m</span>
+            <span className="text-primary">ARK</span>
+            <span className="text-slate-900">it</span>
+          </div>
+        </a>
         <div className="hidden md:flex gap-6 text-sm font-medium uppercase tracking-wider">
           <a className="hover:text-primary" href="#services">
             Services
@@ -52,7 +57,7 @@ export default function HomePage() {
                   See how it works
                 </button>
               </a>
-              <a href="#impact">
+              <a href="/work">
                 <button className="bg-transparent text-primary border border-primary px-8 py-4 font-bold uppercase tracking-widest text-sm">
                   View our work
                 </button>
@@ -664,70 +669,85 @@ export default function HomePage() {
             brands grow smarter, faster and cheaper than anyone else.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-white border-[0.5px] border-neutral-border p-8 rounded-card flex flex-col items-center text-center">
-              <div className="w-[100px] h-[100px] bg-neutral-light border-2 border-primary rounded-full flex items-center justify-center text-xs text-subtext mb-6">
-                Photo
-              </div>
-              <h4 className="text-base font-bold text-dark-text mb-1">
-                Founder One
-              </h4>
-              <p className="text-[12px] font-bold text-primary uppercase tracking-widest mb-6">
-                Co-Founder
-              </p>
-              <div className="flex gap-4 text-[#AAAAAA]">
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  share
-                </span>
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  alternate_email
-                </span>
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  monitoring
-                </span>
-              </div>
-            </div>
-            <div className="bg-white border-[0.5px] border-neutral-border p-8 rounded-card flex flex-col items-center text-center">
-              <div className="w-[100px] h-[100px] bg-neutral-light border-2 border-primary rounded-full flex items-center justify-center text-xs text-subtext mb-6">
-                Photo
-              </div>
-              <h4 className="text-base font-bold text-dark-text mb-1">
-                Founder Two
-              </h4>
-              <p className="text-[12px] font-bold text-primary uppercase tracking-widest mb-6">
-                Co-Founder
-              </p>
-              <div className="flex gap-4 text-[#AAAAAA]">
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  share
-                </span>
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  alternate_email
-                </span>
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  monitoring
-                </span>
+            <div className="relative">
+              <span className="absolute -top-11 -left-4 text-[9rem] font-black text-primary leading-none select-none z-10">
+                A
+              </span>
+              <div className="bg-white border-[0.5px] border-neutral-border p-8 rounded-card flex flex-col items-center text-center">
+                <div>
+                  <img src={founderA} alt="@aaronbisht" className="w-[150px] h-[150px] bg-neutral-light border-2 border-primary rounded-full flex items-center justify-center text-xs text-subtext mb-6" />
+                </div>
+                <h4 className="text-base font-bold text-dark-text mb-1">
+                  Founder One
+                </h4>
+                <p className="text-[12px] font-bold text-primary uppercase tracking-widest mb-6">
+                  Co-Founder
+                </p>
+                <div className="flex gap-4 text-[#AAAAAA]">
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    share
+                  </span>
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    alternate_email
+                  </span>
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    monitoring
+                  </span>
+                </div>
               </div>
             </div>
-            <div className="bg-white border-[0.5px] border-neutral-border p-8 rounded-card flex flex-col items-center text-center">
-              <div className="w-[100px] h-[100px] bg-neutral-light border-2 border-primary rounded-full flex items-center justify-center text-xs text-subtext mb-6">
-                Photo
+            <div className="relative">
+              <span className="absolute -top-11 -left-4 text-[9rem] font-black text-primary leading-none select-none z-10">
+                R
+              </span>
+              <div className="bg-white border-[0.5px] border-neutral-border p-8 rounded-card flex flex-col items-center text-center">
+                <div className="w-[150px] h-[150px] bg-neutral-light border-2 border-primary rounded-full flex items-center justify-center text-xs text-subtext mb-6">
+                  Photo
+                </div>
+                <h4 className="text-base font-bold text-dark-text mb-1">
+                  Founder Two
+                </h4>
+                <p className="text-[12px] font-bold text-primary uppercase tracking-widest mb-6">
+                  Co-Founder
+                </p>
+                <div className="flex gap-4 text-[#AAAAAA]">
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    share
+                  </span>
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    alternate_email
+                  </span>
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    monitoring
+                  </span>
+                </div>
               </div>
-              <h4 className="text-base font-bold text-dark-text mb-1">
-                Founder Three
-              </h4>
-              <p className="text-[12px] font-bold text-primary uppercase tracking-widest mb-6">
-                Co-Founder
-              </p>
-              <div className="flex gap-4 text-[#AAAAAA]">
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  share
-                </span>
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  alternate_email
-                </span>
-                <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
-                  monitoring
-                </span>
+            </div>
+            <div className="relative">
+              <span className="absolute -top-11 -left-4 text-[9rem] font-black text-primary leading-none select-none z-10">
+                K
+              </span>
+              <div className="bg-white border-[0.5px] border-neutral-border p-8 rounded-card flex flex-col items-center text-center">
+                <div>
+                  <img src={founderK} alt="@kavyasharma" className="w-[150px] h-[150px] bg-neutral-light border-2 border-primary rounded-full flex items-center justify-center text-xs text-subtext mb-6" />
+                </div>
+                <h4 className="text-base font-bold text-dark-text mb-1">
+                  Founder Three
+                </h4>
+                <p className="text-[12px] font-bold text-primary uppercase tracking-widest mb-6">
+                  Co-Founder
+                </p>
+                <div className="flex gap-4 text-[#AAAAAA]">
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    share
+                  </span>
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    alternate_email
+                  </span>
+                  <span className="material-symbols-outlined text-lg cursor-pointer hover:text-primary transition-colors">
+                    monitoring
+                  </span>
+                </div>
               </div>
             </div>
           </div>
