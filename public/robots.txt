@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://markit-gyb.vercel.app/sitemap.xml
